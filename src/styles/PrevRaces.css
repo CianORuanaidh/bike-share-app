@@ -1,0 +1,76 @@
+.prevRaceTitle {
+    text-align: center;
+    margin: 0;
+    padding-top: 80px;
+    font-size: 2rem;
+    color: #336699;
+    text-shadow: 1px 1px 0 #257e9f, 2px 2px 0 #257e9f, 3px 3px 0 #d4faf0, 4px 4px 0 #d4faf0, 5px 5px 0 #29d1b0, 6px 6px 0 #29d1b0, 7px 7px 0 #29d1b0, 8px 8px 0 #29d1b0, 9px 9px 0 #29d1b0;
+}
+
+.savedRacesContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.savedRaces {
+    float: left;
+    border: 10px solid #d4faf0;
+    outline: 5px solid #33cc99;
+    width: calc((100% / 3) - 100px);
+    padding-left: 35px;
+    padding-right: 35px;
+    min-width: 500px;
+    min-height: 550px;
+    margin: 50px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    background-color: #fff;
+}
+
+/* .savedRaces:last-child {
+    margin-bottom: 0;
+} */
+
+.savedRaces img {
+    display: inline-block;
+    width: 5%;
+}
+
+.prevRacesComponent {
+    background-color: #fcfcfc;
+}
+
+.sortButton {
+    margin: 2% auto;
+    display: block;
+}
+
+.prevRacesComponent .headerContent {
+    background-image: none;
+    min-height: 0vh;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1250px) {
+    .savedRaces {
+        float: none;
+        width: 80%;
+        margin: 50px auto;
+        margin-top: 20px;
+        margin-bottom: 0;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        min-width: 200px;
+        min-height: 200px;
+    }
+}
+
+/* @media screen and (max-width: 550px) {
+    .savedRaces {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+} */

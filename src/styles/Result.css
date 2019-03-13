@@ -1,0 +1,92 @@
+.resultComponent {
+    text-align: center;
+    background-color:  #fcfcfc;
+    color: #000;
+    padding: 50px 0;
+    position: relative;
+}
+
+.raceInfo h2 {
+    font-size: 2rem;
+    color: #336699; 
+    text-shadow: 1px 1px 0 #257e9f,
+                2px 2px 0 #257e9f,
+                3px 3px 0 #d4faf0,
+                4px 4px 0 #d4faf0,
+                5px 5px 0 #29d1b0,
+                6px 6px 0 #29d1b0,
+                7px 7px 0 #29d1b0,
+                8px 8px 0 #29d1b0,
+                9px 9px 0 #29d1b0;
+}
+
+h2,
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* .resultComponent button {
+    border: none;
+    padding: 10px 20px;
+    background-color: #29d1b0;
+} */
+
+.raceInfo .container {
+    max-width: 800px;
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px 0;
+    border: 10px solid #d4faf0;
+    outline: 5px solid #33cc99;
+}
+
+.raceInfo img {
+    display: inline-block;
+    width: 3%;
+}
+
+.bikeAnimation {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #257e9f;
+}
+
+.bikeAnimation i {
+    font-size: 200px;
+    color: white;
+    animation: bikeMoving;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.bikeAnimation p {
+    font-size: 3rem;
+    text-align: center;
+    max-width: 500px;
+    color: white;
+}
+
+@keyframes bikeMoving {
+    0% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(1000px);
+        display: none;
+    }
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 570px) {
+  .resultComponent {
+      font-size: 0.9rem;
+  }
+ }
